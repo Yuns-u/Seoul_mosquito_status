@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="ko"> 
+    <head>
+        <meta charset="utf-8"> 
+        
+        <title>Predict Mosequito Status</title> 
+    </head>
+    
+        <body>
+            <center>
+                <br><br><h1>Predict House Mosquito Status in Seoul, S.Korea</h1><br>
+                <h3>서울 주거지 모기지수 예측 모델</h3><br>
+                <hr><br>
+                <p> Do you hate mosquitoes? I don't like mosquitoes too. And I always worry that I might see one of them when I open the windows.<br>
+                    One of government organization in Seoul Metropolitan Government called '시민건강국'(Public-health-institute, I can't find official English name.)<br>
+                    Anyway, I made this machine learning model to predict mosquito status in house to avoid opening my windows for too long.<br>
+                    Hope this model useful and I wish you luck not to get mosquito bites.<br> 
+                    Thank you:D
+                </p>
+                <hr><br>
+                <h2>Please insert ONLY numbers</h2> 
+                <form method="POST", action="/predict">
+                    <b>Average Temperture(℃): <input type="number", name="avg_temp", placeholder="enter value"> <br><br>
+                    Minumum Temperture(℃): <input type="number", name="min_temp", placeholder="enter value"> <br><br>
+                    Maximum Temperture(℃): <input type="number", name="max_temp", placeholder="enter value"> <br><br>
+                    Precipitation(mm): <input type="number", name="precipitation", placeholder="enter value"> <br><br><br></b>
+                    <input type="Submit", value='PREDICT!'>
+
+                </form>
+            </center>
+
+        </body> 
+
+    
+</html>
